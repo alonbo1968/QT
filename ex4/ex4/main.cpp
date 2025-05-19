@@ -6,7 +6,7 @@
 
 void do_cpp() {
     std::string name;
-    std::cout << "Enter you name: " << std::endl;
+    std::cout << "Enter your name: " << std::endl;
     std::getline(std::cin, name);
     std::cout << "Hello " << name << std::endl;
 }
@@ -15,7 +15,7 @@ void do_qt() {
     QString name;
     QTextStream qin(stdin);
     QTextStream qout(stdout);
-    qout << "Enter you name: ";
+    qout << "Enter your name: ";
     qout.flush();
     name = qin.readLine();
     qout << "Hello " << name << "\n";
@@ -45,6 +45,7 @@ int main(int argc, char *argv[])
 
     // If you do not need a running Qt event loop, remove the call
     // to a.exec() or use the Non-Qt Plain C++ Application template.
+
     //do_cpp();
 
     //do_qt();
